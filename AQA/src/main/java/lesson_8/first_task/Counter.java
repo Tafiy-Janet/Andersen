@@ -5,6 +5,8 @@ import lesson_8.AppData;
 
 import java.util.*;
 
+import static lesson_8.first_task.ArrayHelper.twoDArrayToList;
+
 
 public class Counter {
     public void setWordsCount() {
@@ -22,11 +24,5 @@ public class Counter {
         wordsCount.entrySet().forEach(System.out::println);
     }
 
-    public <T> List<T> twoDArrayToList(T[][] twoDArray) {
-        List<T> list = new ArrayList<>();
-        for (T[] array : twoDArray) {
-            list.addAll(Arrays.asList(array));
-        }
-        return list;
-    }
+
 }
