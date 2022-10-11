@@ -15,7 +15,7 @@ public class Main {
         String[][] arr = ArrayHelper.generateArray(width, height, isIncorrect);
         try {
             ArrayHelper.sumElements(arr);
-        } catch (MyArrayDataException | MyArraySizeException e) {
+        } catch (ExceptionHelper.MyArrayDataException | ExceptionHelper.MyArraySizeException e) {
             System.out.println(e.getMessage());
         }
     }
