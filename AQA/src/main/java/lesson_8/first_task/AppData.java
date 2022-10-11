@@ -1,4 +1,4 @@
-package lesson_8;
+package lesson_8.first_task;
 
 import java.io.*;
 import java.util.List;

@@ -1,8 +1,6 @@
 package lesson_8.first_task;
 
 
-import lesson_8.AppData;
-
 import java.util.*;
 
 import static lesson_8.first_task.ArrayHelper.twoDArrayToList;

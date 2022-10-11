@@ -1,7 +1,5 @@
 package lesson_8.second_task;
 
-import lesson_8.AppData;
-
 import java.util.*;
 
 public class Phonebook {
