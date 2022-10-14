@@ -1,0 +1,413 @@
+{
+  "id": "0ffe1ecd-51fd-477f-bc17-8cfe24627657",
+  "version": "2.0",
+  "name": "Map",
+  "url": "https://deepstatemap.live/",
+  "tests": [{
+    "id": "39c0e3e1-f72f-46bb-a2e7-753dfaaa6e33",
+    "name": "Launch Plane",
+    "commands": [{
+      "id": "ceb98b5a-36f9-41a8-a598-e94685ea89d8",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "78f58c8b-215d-4aeb-90c2-a03722ce592f",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c54fbd78-c306-46d0-a7fb-45ebbbea97a8",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "24d79d06-8475-49e7-bc5c-386815052f5d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@src='/images/custom/ukrainecapital.png']",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Marker']", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f4251136-df06-4b23-99ea-b155ae5b6714",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "f2d0f339-6c64-4664-8330-03c91c94c3a6",
+    "name": "Check Bombardment",
+    "commands": [{
+      "id": "ee7dc762-d5b6-4dc1-baa6-2acd80e0a5c2",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "15c811cd-7b0d-4989-a700-a8fce8ec1f01",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a1314e22-d2c6-4a5e-97b5-fa5437181601",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@src='/images/custom/ukrainecapital.png']",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Marker']", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c56dafb-c1e5-4eca-b845-52d80509515a",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c5186443-d663-440b-98b9-8ef8598dfa8a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@src='/images/custom/enemy.png']",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(24)", "css:finder"],
+        ["xpath=(//img[@alt='Marker'])[24]", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img[24]", "xpath:idRelative"],
+        ["xpath=//img[24]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dda40afb-3975-463b-9b29-ccbee073050b",
+      "comment": "",
+      "command": "waitForElementPresent",
+      "target": "xpath=//img[@src='/images/cotton.gif']",
+      "targets": [],
+      "value": "30000"
+    }]
+  }, {
+    "id": "e8aea768-f98d-4137-b577-6c2842fc49d2",
+    "name": "Check Layers",
+    "commands": [{
+      "id": "1df23f58-4cab-4153-81e2-5b5311908bc7",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f375f54d-204d-4e49-9329-1f8de2ea1eb2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8e9605ce-dae0-48c6-8a78-81d5e9fd0bd2",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='layers-control']",
+      "targets": [
+        ["css=#layers-control > div", "css:finder"],
+        ["xpath=//div[@id='layers-control']/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "324cb852-437f-4147-8c9d-32374893043e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@class='deep-dialog layers-dialog deep-dialog--active']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e4128697-2542-469e-b9e1-258504e63dd7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='preview-satellite']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "351e0869-14ac-4cff-b02a-dba5167ccff5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='layers-control']",
+      "targets": [
+        ["css=#layers-control path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "52bb336c-54c6-4fcb-a899-c93718d0ebd5",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='preview-terrain']",
+      "targets": [
+        ["css=.base-layer-row:nth-child(2) > .base-layer-title > div", "css:finder"],
+        ["xpath=//div[2]/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "80b12e07-d292-4ba9-b439-bc79e3f7838a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='layers-control']",
+      "targets": [
+        ["css=#layers-control path", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "c1c68241-63d7-4a29-b1e4-67250cf86f2c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='preview-default']",
+      "targets": [
+        ["css=.base-layer-row:nth-child(1) > .base-layer-title > div", "css:finder"],
+        ["xpath=//div[9]/div/div[2]/div/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "8a5537b7-c3b8-44ba-b493-ebdfedc6a07b",
+    "name": "Check Ruler",
+    "commands": [{
+      "id": "0059c4f2-1599-45c6-89af-dbd76b6cc87e",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b0347bd8-82bd-418a-9d2a-bbbdb64ae22a",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "95fcc800-b87e-4f4a-a947-1558c63bd500",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@class='rule']",
+      "targets": [
+        ["css=.rule", "css:finder"],
+        ["xpath=//div[@id='map']/div[2]/div[4]/div[3]/div", "xpath:idRelative"],
+        ["xpath=//div[4]/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6c64693b-9bcb-4725-a8c6-655894f8086e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@class='ruler-modal']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "dbafd323-d194-493e-b0ae-f6bec5b5bedc",
+    "name": "Fill In Search Bar",
+    "commands": [{
+      "id": "4098f125-b62e-4be6-8c5c-c2bd3a5ec45b",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b41652bc-9f24-4c77-a1c0-ce0d261319df",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bbb3a689-9f15-4e1c-b63b-616979288e5e",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=//input[@class='search-bar']",
+      "targets": [
+        ["css=.search-bar", "css:finder"],
+        ["xpath=//input[@type='text']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Kyiv"
+    }, {
+      "id": "ca106a7e-163c-4d14-9ad1-5848fe50334d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@data-point='50.4500336,30.5241361']",
+      "targets": [
+        ["css=.result-row:nth-child(1)", "css:finder"],
+        ["xpath=//div[6]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c80dcfe5-9159-43bd-9bc6-2e74bf8adab4",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@src='https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.8.0/images/marker-icon-2x.png']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "67797ceb-e523-4e3e-8841-a9cc0420457b",
+    "name": "Land Plane",
+    "commands": [{
+      "id": "d89cad92-c575-47db-aa2f-20ced95344ba",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4c095818-fc5d-4c25-a50b-5a5c841b9888",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "6c5668fb-5a29-4eb1-a03c-3a3c5c6c8607",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "1deaa145-756e-4517-bc7b-0b669b8777c7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@src='/images/custom/ukrainecapital.png']",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Marker']", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "ffa59994-661a-4306-b797-549053fd3d2c",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "da7400ba-e35e-4982-9cc5-8cb2cf5aefca",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//img[@src='/images/custom/ukrainecapital.png']",
+      "targets": [
+        ["css=.leaflet-marker-icon:nth-child(1)", "css:finder"],
+        ["xpath=//img[@alt='Marker']", "xpath:img"],
+        ["xpath=//div[@id='map']/div/div[4]/img", "xpath:idRelative"],
+        ["xpath=//div[4]/img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0a7ed441-6084-43a6-bb4e-a8686c806b5c",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "xpath=//img[@src='/images/bayraktar.png']",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "2d3dfa8a-70e6-4e63-87a7-f792de1b567a",
+    "name": "Check Artillery",
+    "commands": [{
+      "id": "cad8713a-b47e-4b87-8972-f01ce3bd2baa",
+      "comment": "",
+      "command": "open",
+      "target": "https://deepstatemap.live/#6/49.440/32.058",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "28eb892f-eab4-4e7b-8121-b2f07e2e871c",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1552x840",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dcf24050-b072-4cac-8c30-156068c73fbe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@id='arty-control']",
+      "targets": [
+        ["css=div:nth-child(1) > svg path:nth-child(4)", "css:finder"]
+      ],
+      "value": ""
+    }, {
+      "id": "19a75339-8190-4022-9b46-2ef9393cc892",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@class='deep-dialog arty-first-dialog deep-dialog--active']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8db86918-2a2e-4e3c-873f-180008fe9070",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@onclick=\"ArtyShooter.selectArty('CAESAR')\"]",
+      "targets": [
+        ["css=.arty-ui:nth-child(4) > .arty-ui", "css:finder"],
+        ["xpath=//div[@onclick=\"ArtyShooter.selectArty('CAESAR')\"]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div[4]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "a29b5005-4f56-4641-bd15-3ca3e92b3cf3",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[@onclick=\"ArtyShooter.selectRound('CAESAR', 'M982')\"]",
+      "targets": [
+        ["css=.arty-ui:nth-child(3) > .arty-ui", "css:finder"],
+        ["xpath=//div[@onclick=\"ArtyShooter.selectRound('CAESAR', 'M982')\"]", "xpath:attributes"],
+        ["xpath=//div[2]/div[2]/div[3]/div[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "45fbe47f-c22b-4f12-a08a-9e17e4a6c0a6",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//div[@class='arty-modal']",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "6dcdead1-3302-490d-b9fd-538270a4f1d8",
+    "name": "Interactive Plane",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["39c0e3e1-f72f-46bb-a2e7-753dfaaa6e33", "f2d0f339-6c64-4664-8330-03c91c94c3a6", "67797ceb-e523-4e3e-8841-a9cc0420457b"]
+  }, {
+    "id": "a526ad1e-e1f4-44c1-8e2d-02a7b761abf4",
+    "name": "Utility Tools",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["e8aea768-f98d-4137-b577-6c2842fc49d2", "8a5537b7-c3b8-44ba-b493-ebdfedc6a07b", "dbafd323-d194-493e-b0ae-f6bec5b5bedc", "2d3dfa8a-70e6-4e63-87a7-f792de1b567a"]
+  }],
+  "urls": ["https://deepstatemap.live/"],
+  "plugins": []
+}
