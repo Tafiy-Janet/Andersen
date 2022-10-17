@@ -8,7 +8,8 @@ import static lesson_8.first_task.ArrayHelper.twoDArrayToList;
 
 public class Counter {
     public void setWordsCount() {
-        AppData appData = new AppData("first_task/words.csv", ";");
+        AppData appData = new AppData();
+        appData.load("first_task/words.csv", ";");
         List<String> wildAnimals = twoDArrayToList(appData.getData());
         System.out.println("Header: " + String.join(",", appData.getHeaders()) + "\nUnique words:");
         Set<String> unique = new HashSet<>(wildAnimals);

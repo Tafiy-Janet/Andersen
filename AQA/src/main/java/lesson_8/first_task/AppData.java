@@ -15,7 +15,7 @@ public class AppData {
         return data;
     }
 
-    public AppData(String fileName, String delimiter) {
+    public void load(String fileName, String delimiter) {
         ClassLoader classLoader = AppData.class.getClassLoader();
         String[][] dataArray = new String[0][0];
         InputStream inputStream = classLoader.getResourceAsStream(fileName);
