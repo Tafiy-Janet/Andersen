@@ -16,7 +16,7 @@ public class Main {
             cat.isHungry();
         }
         System.out.println();
-        plate.addFood(20);
+        plate.addFood(-1);
 
     }
 }

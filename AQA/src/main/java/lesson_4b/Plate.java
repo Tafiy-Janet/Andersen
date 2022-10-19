@@ -18,9 +18,14 @@ public class Plate {
     public void info() {
         System.out.println("Food amount: " + food + "g");
     }
+
     public void addFood(int foodAmount) {
-        food += foodAmount;
-        System.out.println("Food amount after refill: " + food + "g");
+        if (foodAmount < 0) {
+            System.out.println("You can't take away food from cats - they're hungry!");
+        } else {
+            food += foodAmount;
+            System.out.println("Food amount after refill: " + food + "g");
+        }
     }
 
 }
