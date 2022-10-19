@@ -5,11 +5,7 @@ import java.util.*;
 
 public class Park {
     private Scanner scanner = new Scanner(System.in);
-    protected List<Attraction> attractions = new ArrayList(Arrays.asList(
-            new Attraction("Pirates of the Caribbean"),
-            new Attraction("Peppa Pig World"),
-            new Attraction("The Haunted Mansion"),
-            new Attraction("Star Wars Galaxy Edge")));
+    protected List<Attraction> attractions = new ArrayList<>();
     protected List<String> attractionsNames = new ArrayList<>();
 
     public List<String> getAttractionsNames() {
@@ -21,28 +17,8 @@ public class Park {
         return attractionsNames;
     }
 
-    public void list() {
-        attractions.forEach(initialAttraction -> {
-            initialAttraction.setWorkingHours("9-16");
-            Random random = new Random();
-            initialAttraction.setPrice(random.nextInt(150));
-        });
-        System.out.println("List of initial attractions: ");
-        attractions.forEach(attraction -> {
-            System.out.println(attraction.toString());
-        });
-    }
 
-    public void addAttraction() {
-        System.out.println("\nEnter name attraction: ");
-        String name = scanner.nextLine();
-
-        System.out.println("Enter working hours of attraction: ");
-        String workingHours = scanner.nextLine();
-
-        System.out.println("Enter price of attraction: ");
-        int price = scanner.nextInt();
-
+    public void addAttraction(String name,String workingHours, int price) {
         Attraction newAttraction = new Attraction();
         newAttraction.setPrice(price);
         newAttraction.setWorkingHours(workingHours);
@@ -52,7 +28,7 @@ public class Park {
     }
 
     public void getAttractionsInfo() {
-        System.out.println("Choose any of following attractions: " + String.join(", ", getAttractionsNames()) +
+        System.out.println("To get full info about attraction choose any of following: " + String.join(", ", getAttractionsNames()) +
                 "\nType only ordinal number of desired attraction.");
         int selectedAttraction = scanner.nextInt() - 1;
         Attraction attraction = attractions.get(selectedAttraction);
