@@ -17,9 +17,13 @@ public class AppData {
     }
 
     public void load(String fileName, String delimiter) {
+        //Return the class loader for the class.
         ClassLoader classLoader = AppData.class.getClassLoader();
         int[][] dataArray = new int[0][0];
+        //Use getResourceAsStream(String name) in order not to insert path of file manually.
+        //Method allows to get the specified resource of this class in the form of InputStream object.
         InputStream inputStream = classLoader.getResourceAsStream(fileName);
+        //Assert inputStream is not null in order no to get NullPointerException.
         assert inputStream != null;
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
