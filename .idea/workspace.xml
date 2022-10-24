@@ -4,17 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cd726627-6de6-4d6e-a99f-6a678a782313" name="Changes" comment="Added comment lines to getResourceAsStream() method.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/first_task/AppData.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/first_task/AppData.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/first_task/ArrayHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/first_task/ArrayHelper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/first_task/Counter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/first_task/Counter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/first_task/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/first_task/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/second_task/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/second_task/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/java/lesson_8/second_task/Phonebook.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/lesson_8/second_task/Phonebook.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/src/main/resources/first_task/words.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/first_task/words.csv" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AQA/target/classes/first_task/words.csv" beforeDir="false" />
+    <list default="true" id="cd726627-6de6-4d6e-a99f-6a678a782313" name="Changes" comment="Refactored project's structure">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +48,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "jdk.selected.JAVA_MODULE": "18",
-    "last_opened_file_path": "C:/Users/Admin/Downloads/Andersen-Lesson_8",
+    "last_opened_file_path": "C:/Users/Admin/Downloads/Andersen-Lesson_8 (1)/Andersen-Lesson_8",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -337,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666345345875</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="Refactored project's structure">
+      <created>1666608030266</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1666608030266</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -367,6 +365,7 @@
     <MESSAGE value="Provided scenario in case of negative number of foodAmount." />
     <MESSAGE value="Added changes to lesson_4c" />
     <MESSAGE value="Added comment lines to getResourceAsStream() method." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added comment lines to getResourceAsStream() method." />
+    <MESSAGE value="Refactored project's structure" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored project's structure" />
   </component>
 </project>
