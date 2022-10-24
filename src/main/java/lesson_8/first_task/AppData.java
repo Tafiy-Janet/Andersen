@@ -22,7 +22,7 @@ public class AppData {
         assert inputStream != null;
 
         try (BufferedReader br = new BufferedReader(new InputStreamReader(inputStream))) {
-            List<String> stringList = br.lines().toList();
+            List<String> stringList = ArrayHelper.toList(br.lines());
             int rowCount = stringList.size() - 1;
             boolean isHeader = true;
             int j = 0;
