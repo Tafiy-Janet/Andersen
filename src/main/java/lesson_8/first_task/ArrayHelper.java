@@ -2,7 +2,6 @@ package lesson_8.first_task;
 
 import java.util.ArrayList;
 import java.util.Arrays;
-import java.util.Collections;
 import java.util.List;
 import java.util.stream.Stream;
 
@@ -15,6 +14,6 @@ public class ArrayHelper {
         return list;
     }
     public static <T> List<T> toList(Stream<T> inputStream) {
-        return (List<T>) Collections.unmodifiableList(new ArrayList<>(Arrays.asList(inputStream.toArray())));
+        return (List<T>) List.of(inputStream.toArray());
     }
 }
